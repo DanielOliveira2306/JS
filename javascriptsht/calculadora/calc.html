@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Enviar" onclick="clicar()">
+
+    <div id="res"></div>
+
+    <script>
+        function clicar(){
+        var num1 = document.getElementById('n1').value
+        var num2 = document.getElementById('n2').value
+        var resu = document.getElementById('res')
+
+        var txt1 = Number(num1)
+        var txt2 = Number(num2)
+        var resp = txt1 + txt2
+       resu.innerHTML = `${resp}`
+        
+
+}
+    </script>
+</body>
+</html>
